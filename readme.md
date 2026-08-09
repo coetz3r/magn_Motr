@@ -6,7 +6,7 @@
 
 [![Interactive 3D model viewport screenshot](assets/screenshot.png)](https://github.com/coetz3r/magn_Motr)
 
-A lightweight, zero-build interactive 3D WebGL model viewer and mechanical explainer template powered by Three.js ES Modules.
+A lightweight, zero-build, plug-and-play 3D WebGL model viewer built with Three.js ES Modules. Download, customize, and use it to bring interactive 3D models to your own web projects.
 
 **Repository:** https://github.com/coetz3r/magn_Motr
 
@@ -14,9 +14,29 @@ A lightweight, zero-build interactive 3D WebGL model viewer and mechanical expla
 
 ## Overview
 
-**magn'Motr** is a plug-and-play starter kit designed for web developers, engineers, CAD designers, and educators who need to embed interactive 3D models into a web page. 
+**magn'Motr** is a lightweight, zero-build starter template for adding interactive 3D models to websites using Three.js ES Modules.
 
-It eliminates the overhead of complex front-end build pipelines (such as Vite, Webpack, or React) by using native browser ES Import Maps. Simply drop in your exported `.glb` or `.gltf` 3D model, configure your mesh transparency rules, and serve.
+Download the repository, replace the example model, and customize the controls, styling, and interactions to create your own 3D product viewer, mechanical demonstration, engineering model, educational visualization, or interactive presentation.
+
+No npm, bundler, build process, or framework is required. The viewer runs directly in the browser using native ES Modules and Import Maps.
+
+The included Magna'Motr model is a demonstration of what the viewer can do. It can be replaced with your own `.glb` or `.gltf` model.
+
+---
+
+## What's Included
+
+- Interactive 3D model viewer
+- GLB/GLTF model loading
+- Orbit, pan, and zoom camera controls
+- Automatic model centering and scaling
+- Configurable mesh transparency
+- Optional mechanical motion / kinematics
+- Responsive WebGL canvas
+- Lightweight loading indicator
+- Plain HTML, CSS, and JavaScript
+- Three.js loaded through ES Modules
+- No build tools or package installation required
 
 ---
 
@@ -35,8 +55,8 @@ It eliminates the overhead of complex front-end build pipelines (such as Vite, W
 
 | Input / Gesture | Action |
 | :--- | :--- |
-| **Right Click + Drag** | Orbit / rotate camera around the model center |
-| **Left Click + Drag** | Pan camera position across the viewport plane |
+| **Left Click + Drag** | Orbit / rotate camera around the model center |
+| **Right Click + Drag** | Pan camera position across the viewport plane |
 | **Ctrl + Right Click + Drag** | Fine-tuned vertical and lateral camera adjustment |
 | **Scroll Wheel** | Zoom camera in / out relative to focal target |
 
@@ -53,6 +73,8 @@ It eliminates the overhead of complex front-end build pipelines (such as Vite, W
 ---
 
 ## Customization & Tweaking Guide
+
+The viewer is designed to be adapted to your own project. The Magna'Motr files are provided as the working example; you can replace the model and adjust the viewer without rebuilding the application.
 
 All configuration options live inside `js/magn_Motr.js`.
 
@@ -92,6 +114,19 @@ Tweak the loading bar color scheme to match your branding:
 progressBarFill.style.background = "#0088ff";           // Main color
 progressBarFill.style.boxShadow  = "0 0 8px #0088ff";   // Glow radius & color
 ```
+
+---
+
+## Quick Start
+
+1. Download or clone this repository.
+2. Replace `assets/magn_Motr.glb` with your own `.glb` or `.gltf` model.
+3. Update the model path in `js/magn_Motr.js` if necessary.
+4. Adjust the viewer settings to match your model.
+5. Serve the folder with a local HTTP server.
+6. Open the viewer in your browser.
+
+The goal is simple: **download → replace the model → customize → serve.**
 
 ---
 

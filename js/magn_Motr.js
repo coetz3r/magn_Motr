@@ -40,7 +40,7 @@ function initmagnMotr() {
   scene.add(gridHelper);
 
   // Camera & Renderer
-  const camera = new THREE.PerspectiveCamera(55, width / height, 0.1, 1000);
+  const camera = new THREE.PerspectiveCamera(55, width / height, 0.1, 5000);
 
   const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
   renderer.setSize(width, height);
