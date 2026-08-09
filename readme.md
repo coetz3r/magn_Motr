@@ -4,7 +4,7 @@
   <img src="assets/magn_Motr.png" alt="magn'Motr Logo" width="380" />
 </p>
 
-[![Interactive 3D model viewport screenshot](assets/magn_Motr.png)](https://github.com/coetz3r/magn_Motr)
+[![Interactive 3D model viewport screenshot](assets/screenshot.png)](https://github.com/coetz3r/magn_Motr)
 
 A lightweight, zero-build interactive 3D WebGL model viewer and mechanical explainer template powered by Three.js ES Modules.
 
