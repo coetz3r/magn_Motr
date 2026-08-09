@@ -35,8 +35,8 @@ It eliminates the overhead of complex front-end build pipelines (such as Vite, W
 
 | Input / Gesture | Action |
 | :--- | :--- |
-| **Left Click + Drag** | Orbit / rotate camera around the model center |
-| **Right Click + Drag** | Pan camera position across the viewport plane |
+| **Right Click + Drag** | Orbit / rotate camera around the model center |
+| **Left Click + Drag** | Pan camera position across the viewport plane |
 | **Ctrl + Right Click + Drag** | Fine-tuned vertical and lateral camera adjustment |
 | **Scroll Wheel** | Zoom camera in / out relative to focal target |
 
