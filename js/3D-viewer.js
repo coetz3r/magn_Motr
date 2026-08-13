@@ -5,11 +5,11 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-function initmagnMotr() {
+function init3Dviewer() {
   const container = document.getElementById("container3D");
 
   if (!container) {
-    setTimeout(initmagnMotr, 100);
+    setTimeout(init3Dviewer, 100);
     return;
   }
 
@@ -93,17 +93,17 @@ function initmagnMotr() {
   }
 
   const loader = new GLTFLoader();
-  const modelPath = (typeof magnaData !== "undefined" && magnaData.modelUrl)
-    ? magnaData.modelUrl
-    : "assets/magn_Motr.glb";
+  const modelPath = (typeof viewerData !== "undefined" && viewerData.modelUrl)
+    ? viewerData.modelUrl
+    : "assets/3D-viewer.glb";
 
-  console.log("magnMotr loading model from:", modelPath);
+  console.log("3D viewer loading model from:", modelPath);
 
   loader.load(
     modelPath,
     // 1. Success Callback
     function (gltf) {
-      console.log("magnMotr: GLTF loaded successfully!", gltf);
+      console.log("3D viewer: GLTF loaded successfully!", gltf);
       
       // Remove progress bar when finished
       progressBarTrack.remove();
@@ -177,7 +177,7 @@ function initmagnMotr() {
     },
     // 3. Error Callback
     function (error) {
-      console.error("magnMotr GLTF Load Error:", error);
+      console.error("3D viewer GLTF Load Error:", error);
       progressBarTrack.remove();
 
       const errDiv = document.createElement("div");
@@ -192,7 +192,7 @@ function initmagnMotr() {
       errDiv.style.borderRadius = "4px";
       errDiv.style.zIndex = "999";
       errDiv.style.border = "1px solid #ff4444";
-      errDiv.innerHTML = `<strong>magnMotr Error:</strong> Cannot load 3D file.<br>Path: <code>${modelPath}</code>`;
+      errDiv.innerHTML = `<strong>3D viewer Error:</strong> Cannot load 3D file.<br>Path: <code>${modelPath}</code>`;
       container.appendChild(errDiv);
     }
   );
@@ -230,7 +230,7 @@ function initmagnMotr() {
 }
 
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initmagnMotr);
+  document.addEventListener("DOMContentLoaded", init3Dviewer);
 } else {
-  initmagnMotr();
+  init3Dviewer();
 }
