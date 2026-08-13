@@ -4,6 +4,10 @@
   <img src="assets/3D-viewer.png" alt="3D viewer Logo" width="380" />
 </p>
 
+<p align="center">
+  <a href="https://coetz3r.github.io/portfolio" target="_blank"><strong>🚀 Live Interactive Demo</strong></a>
+</p>
+
 [![Interactive 3D model viewport screenshot](assets/screenshot.png)](https://github.com/coetz3r/3D-viewer)
 
 A lightweight, zero-build, plug-and-play 3D WebGL model viewer built with Three.js ES Modules. Download, customize, and use it to bring interactive 3D models to your own web projects.
